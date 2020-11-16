@@ -1,0 +1,41 @@
+{
+  "name": "next-base",
+  "version": "1.0.0",
+  "description": "A Simple Base To learn Nextjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch:css && next",
+    "build": "npm run build:css && next build",
+    "build:css": "postcss styles/tailwind.css -o styles/main.css",
+    "watch:css": "postcss styles/tailwind.css -o styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidd-92/next-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidd-92/next-base/issues"
+  },
+  "homepage": "https://github.com/sidd-92/next-base#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "next": "^10.0.1",
+    "next-routes": "^1.4.2",
+    "postcss-import": "^12.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.6",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
